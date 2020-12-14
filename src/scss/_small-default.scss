@@ -65,7 +65,31 @@ main {
     
      
  
+.quizBreadcrumbs {
 
+text-decoration: none; 
+float: left; 
+padding: 20px; 
+margin: 15px 30px 50px 30px; 
+font-size: 28px; 
+font-weight: 800; 
+
+li {
+list-style-type: none; 
+float: left; 
+padding: 0px 5px; 
+
+
+a:link, a:visited {
+color: $primaryColor; 
+
+}
+
+
+}
+
+
+}
 
 
 /* ------------------------TOPNAV----------------------------- */
@@ -129,18 +153,33 @@ nav {
 
 
 .questionInfo {
+clear: both; 
 margin-left: 50px; 
 margin-bottom: 40px; 
 width: 100%; 
 border: 1px solid $primaryColor; 
 font-size: 24px; 
 border-radius: 2px; 
+height: 350px; 
+z-index: -1; 
+
+
+.questionNumber {
+background-color: $primaryColor; 
+color: $thirdColor; 
+font-size: 24px; 
+z-index: 999; 
+}
+
 
 
 h1 {
 text-align: left; 
 padding: 20px 20px; 
-font-size: 28px; 
+font-size: 20px; 
+color: $thirdColor; 
+background-color: $primaryColor; 
+color: $thirdColor; 
 
 }
 
@@ -148,53 +187,59 @@ font-size: 28px;
 h2 {
 text-align: left; 
 padding: 20px 20px; 
-font-size: 24px; 
+font-size: 18px; 
 
 
 
 }
 
 
+
+
 p {
+font-size: 24px; 
 text-align: center;  
 padding: 20px 20px; 
 }
 
 
 
+.allButtons {
+margin: 20px 5%;  
+
+
+div {
+    width: 25%; 
+    margin: 10px 20px; 
+    float: left; 
+    padding: 10px 10px; 
+    background-color: $primaryColor; 
+    border: none; 
+    color: $thirdColor; 
+    text-align: center; 
+    
+    
+    }
+
+
+
 }
 
-button {
-width: 30%; 
-padding: 10px 10px; 
-margin: 10px 5px 40px 5px; 
-background-color: $primaryColor; 
-border: none; 
-color: $thirdColor; 
-
-
 }
-
-.submitButton {
-width: 75%; 
-border-radius: 2px;
-
-
-}
-
-
 
 .questionNavigation {
 border: 1px solid $primaryColor; 
 border-radius: 2px; 
-margin-left: 100px; 
-margin-top: 55px; 
+margin-left: 75px; 
+margin-top: 137px; 
+width: 75%; 
+height: 400px; 
 
 
 li {
 list-style-type: none; 
 padding: 20px 0px; 
-
+text-align: center; 
 
 
 a {
@@ -215,6 +260,32 @@ color: $thirdColor;
 
 
 }
+
+
+.submitButton {
+    width: 75%; 
+    border-top: 1px solid $primaryColor; 
+    color: $primaryColor; 
+    height: 35px;
+    background-color: $thirdColor;  
+    text-align: center; 
+
+    a {
+    text-align: center; 
+
+    }
+    
+    a:hover {
+        background-color: $primaryColor; 
+        color: $thirdColor; 
+
+    }
+
+
+
+    }
+    
+
 
 }
 

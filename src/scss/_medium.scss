@@ -30,7 +30,59 @@ main {
     
     
     
-     
+  
+.questionInfo {
+
+
+    
+    h1 {
+    text-align: left; 
+    padding: 20px 20px; 
+    font-size: 24px; 
+    
+    }
+    
+    
+    h2 {
+    text-align: left; 
+    padding: 20px 20px; 
+    font-size: 24px; 
+    
+    
+    
+    }
+    
+    
+    p {
+    font-size: 18px; 
+    text-align: center;  
+    padding: 20px 20px; 
+    }
+    
+    
+    .allButtons {
+    margin: 20px 5%;  
+    
+    
+    .theChoices {
+        width: 20%; 
+        margin: 10px 20px; 
+        float: left; 
+        padding: 10px 10px; 
+        background-color: $primaryColor; 
+        border: none; 
+        color: $thirdColor; 
+       
+        
+        
+        }
+    
+    
+    
+    }
+    
+    }
+    
         
         
       

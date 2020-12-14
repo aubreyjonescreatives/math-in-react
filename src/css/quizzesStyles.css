@@ -103,6 +103,19 @@ body {
 /* ------------------------MAIN----------------------------- */
 main {
   /* ------------------------TOPNAV----------------------------- */ }
+  main .quizBreadcrumbs {
+    text-decoration: none;
+    float: left;
+    padding: 20px;
+    margin: 15px 30px 50px 30px;
+    font-size: 28px;
+    font-weight: 800; }
+    main .quizBreadcrumbs li {
+      list-style-type: none;
+      float: left;
+      padding: 0px 5px; }
+      main .quizBreadcrumbs li a:link, main .quizBreadcrumbs li a:visited {
+        color: #1B75BC; }
   main nav {
     display: block;
     height: 100%;
@@ -126,47 +139,75 @@ main {
       main nav .flcincicon .flcincicon img {
         width: 100%; }
   main .questionInfo {
+    clear: both;
     margin-left: 50px;
     margin-bottom: 40px;
     width: 100%;
     border: 1px solid #1B75BC;
     font-size: 24px;
-    border-radius: 2px; }
+    border-radius: 2px;
+    height: 350px;
+    z-index: -1; }
+    main .questionInfo .questionNumber {
+      background-color: #1B75BC;
+      color: white;
+      font-size: 24px;
+      z-index: 999; }
     main .questionInfo h1 {
       text-align: left;
       padding: 20px 20px;
-      font-size: 28px; }
+      font-size: 20px;
+      color: white;
+      background-color: #1B75BC;
+      color: white; }
     main .questionInfo h2 {
       text-align: left;
       padding: 20px 20px;
-      font-size: 24px; }
+      font-size: 18px; }
     main .questionInfo p {
+      font-size: 24px;
       text-align: center;
       padding: 20px 20px; }
-  main button {
-    width: 30%;
-    padding: 10px 10px;
-    margin: 10px 5px 40px 5px;
-    background-color: #1B75BC;
-    border: none;
-    color: white; }
-  main .submitButton {
-    width: 75%;
-    border-radius: 2px; }
+    main .questionInfo .allButtons {
+      margin: 20px 5%; }
+      main .questionInfo .allButtons div {
+        width: 25%;
+        margin: 10px 20px;
+        float: left;
+        padding: 10px 10px;
+        background-color: #1B75BC;
+        border: none;
+        color: white;
+        text-align: center; }
   main .questionNavigation {
     border: 1px solid #1B75BC;
     border-radius: 2px;
-    margin-left: 100px;
-    margin-top: 55px; }
+    margin-left: 75px;
+    margin-top: 137px;
+    width: 75%;
+    height: 400px; }
     main .questionNavigation li {
       list-style-type: none;
-      padding: 20px 0px; }
+      padding: 20px 0px;
+      text-align: center; }
       main .questionNavigation li a {
         background-color: white;
         color: #1B75BC; }
     main .questionNavigation a:hover {
       background-color: #1B75BC;
       color: white; }
+    main .questionNavigation .submitButton {
+      width: 75%;
+      border-top: 1px solid #1B75BC;
+      color: #1B75BC;
+      height: 35px;
+      background-color: white;
+      text-align: center; }
+      main .questionNavigation .submitButton a {
+        text-align: center; }
+      main .questionNavigation .submitButton a:hover {
+        background-color: #1B75BC;
+        color: white; }
 
 /* ------------------------FOOTER----------------------------- */
 div#wrapperFooter {
@@ -210,6 +251,28 @@ footer {
       font-size: 28px; }
     main .topnav .topnav-right {
       left: 90%; }
+    main .questionInfo h1 {
+      text-align: left;
+      padding: 20px 20px;
+      font-size: 24px; }
+    main .questionInfo h2 {
+      text-align: left;
+      padding: 20px 20px;
+      font-size: 24px; }
+    main .questionInfo p {
+      font-size: 18px;
+      text-align: center;
+      padding: 20px 20px; }
+    main .questionInfo .allButtons {
+      margin: 20px 5%; }
+      main .questionInfo .allButtons .theChoices {
+        width: 20%;
+        margin: 10px 20px;
+        float: left;
+        padding: 10px 10px;
+        background-color: #1B75BC;
+        border: none;
+        color: white; }
 
   /*----------------FOOTER--------------------
   
