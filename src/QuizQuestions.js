@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {useState, Component} from 'react'
 import quizinfoData from './data/quizquestions.json'
 import SideNavigation from './SideNavigation'
 import QuizResponses from './QuizResponses'
@@ -10,26 +10,42 @@ import quizzesStyles from './css/quizzesStyles.css'
 import {Card} from '@material-ui/core'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { render } from '@testing-library/react'
+//import { SettingsCellRounded } from '@material-ui/icons'
 
 
 const quizzes = quizinfoData.results[0].questions
+
+
+let totalScore = 1
+
+const questionResponse = (userPick) => {
+   if (userPick == quizzes.rightAnswer) {
+//       setScore(score + 1)
+      console.log("Congrats, You got it right!")
+      console.log(totalScore++)
+      console.log(quizzes.rightAnswer)
+   }
+   else if (userPick = quizzes.wrongAnswers) {
+   console.log("Sorry, you got it wrong. Try again?")
+   console.log(quizzes.wrongAnswer)
+   }
+   else 
+   console.log("What was that? Please try again.")
+}
+
+
+
 
 
 
 class QuizQuestions extends Component {
 
 
-   
-
-/*   state = {
-quizzes: quizinfoData.results[0].questions
-
-
-}
-*/
 
 render() {
 return (
+
+
 
 
 
@@ -68,7 +84,13 @@ return (
 
 {
    
+
+
+
+
+   
 quizzes.map((quiz) => {
+
 return (   
 
 
@@ -80,9 +102,9 @@ return (
 <h2>{quiz.question}</h2>
 <p>{quiz.questionDetail}</p>
 <div className="allButtons">
-<div id="choiceOne" onClick={()=> question1()}>{quiz.option1}</div>
-<div id="choiceTwo" onClick={()=> question2()}>{quiz.option2}</div>
-<div id="choiceThree" onClick={()=> question3()}>{quiz.option3}</div>
+<div id="choiceOne" onClick={()=> questionResponse()}>{quiz.option1}</div>
+<div id="choiceTwo" onClick={()=> questionResponse()}>{quiz.option2}</div>
+<div id="choiceThree" onClick={()=> questionResponse()}>{quiz.option3}</div>
 </div>
 </Card>
 
@@ -91,22 +113,7 @@ return (
 )
 
 
-const question1 = () => {
-   console.log("Congrats, You got it right!")
-      
-   }
 
-   const question2 = () =>{
-      console.log("Sorry, that is wrong. Try again?")
-         
-      }
-      
-      
-      const question3 = () => {
-   console.log("Sorry, that is wrong. Try again?")
-      
-   }
-   
 
 })
 

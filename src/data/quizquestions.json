@@ -6,55 +6,62 @@
        "number": "Question 1",
        "question": "Find the absolute value of the integer:", 
        "questionDetail": "| -9 |",
-       "option1": "-9", 
-       "option2": "9", 
-       "option3": "0", 
-       "rightAnswer": "9"  
+       "option1": -9,  
+       "option2": 9, 
+       "option3": 0,  
+       "rightAnswer": [-9, 28, -37, -13, -1, -4.22],
+       "wrongAnswers": [9, 0, -28, -3, 76, 37, -21, 21, 1, -13, -1.36, 4.22]  
      },
      { 
        "number": "Question 2",
        "question": "Find the absolute value of the integer:", 
        "questionDetail": "| 4 | ⦁ | -7 |",
-       "option1": "28", 
-       "option2": "-28", 
-       "option3": "-3", 
-       "rightAnswer": "28"  
+       "option1": 28, 
+       "option2": -28, 
+       "option3": -3, 
+       "rightAnswer": [-9, 28, -37, -13, -1, -4.22],
+       "wrongAnswers": [9, 0, -28, -3, 76, 37, -21, 21, 1, -13, -1.36, 4.22]
+
      },
      { 
        "number": "Question 3",
        "question": "Find the absolute value of the integer:", 
        "questionDetail": "| 4 ⦁ 2 (5 -3) +9 |",
-       "option1": "76", 
-       "option2": "-37", 
-       "option3": "37", 
-       "rightAnswer": "-37"  
+       "option1": 76, 
+       "option2": -37, 
+       "option3": 37, 
+       "rightAnswer": [-9, 28, -37, -13, -1, -4.22], 
+       "wrongAnswers": [9, 0, -28, -3, 76, 37, -21, 21, 1, -13, -1.36, 4.22]
      },
      { 
        "number": "Question 4",
          "question": "Add:", 
          "questionDetail": "-17 + 4",
-         "option1": "-21", 
-         "option2": "-13", 
-         "option3": "21", 
-         "rightAnswer": "-13"  
+         "option1": -21, 
+         "option2": -13, 
+         "option3": 21, 
+         "rightAnswer": [-9, 28, -37, -13, -1, -4.22],
+         "wrongAnswers": [9, 0, -28, -3, 76, 37, -21, 21, 1, -13, -1.36, 4.22]  
      },
      { 
        "number": "Question 5",
        "question": "Add:", 
        "questionDetail": "6 + (-7)",
-       "option1": "-1", 
-       "option2": "1", 
-       "option3": "-13", 
-       "rightAnswer": "-1"  
+       "option1": -1, 
+       "option2": 1, 
+       "option3": -13, 
+       "rightAnswer": [-9, 28, -37, -13, -1, -4.22],
+       "wrongAnswers": [9, 0, -28, -3, 76, 37, -21, 21, 1, -13, -1.36, 4.22] 
      },
      { 
        "number": "Question 6",
          "question": "Add:", 
          "questionDetail": "-2.79 + (-1.43)",
-         "option1": "-4.22", 
-         "option2": "-1.36", 
-         "option3": "4.22", 
-         "rightAnswer": "-4.22"  
+         "option1": -4.22, 
+         "option2": -1.36, 
+         "option3": 4.22, 
+         "rightAnswer": [-9, 28, -37, -13, -1, -4.22], 
+         "wrongAnswers": [9, 0, -28, -3, 76, 37, -21, 21, 1, -13, -1.36, 4.22] 
      }
      
      
